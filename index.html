@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Sam Engen</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet"  type="text/css" href="./CSS/shared_css.css">
+        <link rel="icon" type="image/x-icon" href="./images//icons/favicon.ico">
+    </head>
+
+    <body>
+
+        <header>
+            <!-- NAVBAR -->
+            <nav id="navbar" class="nav-container">
+                <ul class="nav-bar">
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#projects">Highlights</a></li>
+                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- END NAVBAR -->
+
+        </header>
+
+        <main>
+            <!-- spacing for navbar at top of page -->
+            <div class="nav-spacer"></div>
+            <!-- FLAVOR VIDEO -->
+            <div class="vidtext">
+                <video class= "background-vid" 
+                    src="./videos/pexels-free-videos-853919-1920x1080-25fps.mp4"
+                    autoplay muted loop></video>
+                <p class="vid-overlay">
+                    <i>Deleted code is debugged code.<br><br>-Jeff Sickel</i><br><br><br>
+                    <strong>Sam Engen</strong><br>
+                    Welcome to my portfolio. Please browse my work and feel
+                    free to contact me using the links <a href="#contact">below.</a>
+                </p>
+            </div>
+            <!-- END FLAVOR VIDEO -->
+
+            <!-- ABOUT SECTION -->
+            <h1>About Me</h1>
+            <div class="section" id="about">
+                
+                <div class="col-l col-image">
+                    <img  src="./Images/placeholder.avif">
+                </div>
+                <div class="col-r col-text">
+                    <p>
+                        I am a software developer beginning my career.
+                        I have completed a rigorous coding bootcamp and have
+                        experience with HTML, CSS, JavaScript, C++, and C#.
+                        I have experience developing games in both Unity and
+                        Unreal Engine.
+                    </p>
+                </div>
+            </div>
+            <!-- END ABOUT SECTION -->
+
+            <!-- PROJECT HIGHLIGHTS SECTION -->
+            <h1>Project Highlights</h1>
+            <div class="section" id="projects">  
+                <div class="col-f">
+                    <!-- Website Card -->
+                    <div class="card">
+                        <h3>Portfolio Website</h3>
+                        <div class="card-image">
+                            <img src="./Images/portfolio_site.png">
+                            <div class="image-overlay">
+                                <a href="https://github.com/LLamablaster/HTML-and-CSS-Projects/tree/main/portfolio-site"
+                                target="_blank">
+                                    <p>Click to explore</p>
+                                </a>
+                            </div>
+                        </div>
+                        <p>
+                            The website you are looking at! 
+                            Utilizes HTML and CSS.
+                        </p>
+                    </div>
+                    <!-- End website card -->
+                    <!-- TBD card -->
+                    <div class="card">
+                        <h3>TBD</h3>
+                        <div class="card-image">
+                            <img src="./Images/project.jpg">
+                            <div class="image-overlay">
+                                <p>Click to explore</p>
+                            </div>
+                        </div>
+                        <p>
+                            Stay tuned!
+                        </p>
+                    </div>
+                    <!-- End tbd card -->
+                    <!-- Noble Rot card -->
+                    <div class="card">
+                        <h3>Noble Rule of Three</h3>
+                        <div class="card-image">
+                            <img src="./Images/Copyofzolldesignlogo1.png">
+                            <div class="image-overlay">
+                                <p>Click to explore</p>
+                            </div>
+                        </div>
+                        <p>
+                            A lightweight and flexible tabletop roleplay system.
+                        </p>
+                    </div>
+                    <!-- End rot card -->
+                </div>
+            </div>
+            <!-- END PROJECT HIGHLIGHTS -->
+
+            <!-- PORTFOLIO LINKS -->
+            <h1>Portfolio Links</h1>
+            <div class="section" id="portfolio">
+                <div class="col-l col-links">
+                    <a href="https://github.com/LLamablaster?tab=repositories"
+                        target="_blank">
+                        <h2>Github Repositories</h2>
+                    </a>
+                </div>
+                <div class="col-r col-image">
+                    <img src="./Images/image.jpg">
+                </div>
+            </div>
+            <!-- END PORTFOLIO LINKS -->
+
+            <!-- CONTACT SECTION -->
+            <h1>Contact</h1>
+            <div class="section contact" id="contact">
+                <div class="col-l col-text">
+                    Please feel free to contact me directly on LinkedIn,
+                    send me an email at sam.p.engen@gmail.com, or leave
+                    a message using this contact form.
+                </div>
+                <div class="col-r col-contact">
+                    <form action method="post">
+                        <label>Name:</label>
+                        <input type="text" id="name" name="name" 
+                            placeholder="Your name here"><br>
+                        <label>Email:</label>
+                        <input type="text" id="email" name="email" 
+                            placeholder="Your email address"><br>
+                        <label>Message:</label>
+                        <input type="text" id="message" name="message" 
+                            placeholder="Message"><br>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="contact-links-container">
+                <div class="contact-link-box">
+                    <a href="https://www.linkedin.com/in/samosir-p-engen/" target="_blank">
+                        <img class="contact-link" src="./Images/icons/linkedin_icon.png">
+                    </a>
+                </div>
+                <div class="contact-link-box">
+                    <a href="mailto:sam.p.engen@gmail.com" target="_blank">
+                        <img class="contact-link" src="./Images/icons/email_icon.png">
+                    </a>
+                </div>
+                <div class="contact-link-box">
+                    <a href="https://github.com/LLamablaster?tab=repositories" target="_blank">
+                        <img class="contact-link" src="./Images/icons/github_icon.png">
+                    </a>
+                </div>
+            </div>
+            <!-- END CONTACT SECTION -->
+
+        </main>
+
+        <footer>
+            <!-- FOOTER SECTION -->
+            <div class="footer" id="footer">
+                <h6>&copy; 2023 Sam Engen</h6>
+            </div>
+            <!-- END FOOTER SECTION -->
+        </footer>
+
+    </body>
+
+</html>
