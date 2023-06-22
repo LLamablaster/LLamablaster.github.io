@@ -1,9 +1,25 @@
-/* General Styling */
+/********** General Styling **********/
 html {
     font-family: 'Verdana', sans-serif;
     color: bisque;
     background-color: darkslateblue;
     scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+hr {
+    opacity: .3;
+}
+
+main {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+main.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h1, h3 {
@@ -27,7 +43,7 @@ img {
     object-fit: cover;
 }
 
-/* Navigation Bar Styling */
+/********** Navigation Bar Styling **********/
 .nav-container {
     position: fixed;
     background-color: slategray;
@@ -44,13 +60,19 @@ img {
 
 .nav-link {
     display: inline;
-    margin: 3px;
     border-style: solid;
     border-width: 2px;
     border-radius: 6px;
     padding: 3px;
     background-color: antiquewhite;
     font-size: 16pt;
+    animation: slide-in 1s;
+    margin: 3px;
+}
+
+@keyframes slide-in {
+    from {margin: -50px;}
+    to {margin: 3px;}
 }
 
 .nav-link a {
@@ -62,7 +84,7 @@ img {
     background-color: burlywood;
 }
 
-/* Video Styling */
+/********** Video Styling **********/
 .vidtext {
     border: 2px solid plum;
     border-radius: 10px;
@@ -91,7 +113,7 @@ img {
     padding: 2.5%;
 }
 
-/* section styling */
+/********** Section Styling **********/
 .section {
     width: 100%;
     height: 300px;
@@ -104,7 +126,12 @@ img {
 
 }
 
-.col-l {
+/********** Column Styling **********/
+.col {
+
+}
+
+.l {
     width: 45%;
     left: 3%;
     margin-right: 2%;
@@ -112,19 +139,66 @@ img {
     position: relative;
 }
 
-.col-r {
+.r {
     width: 45%;
     margin-left: 2%;
     max-height: 250px;
     display: inline-block;
+    position: relative;
 }
 
-.col-f {
+.f {
     width: 100%;
     display: flex;
     height: 250px;
 }
 
+/********** Column Text Styling **********/
+.col-text {
+    background-color: rgba(10, 40, 100, .6);
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 10px;
+    max-height: 230px;
+}
+
+/********** Column Image Styling **********/
+.col-img-container {
+    display: inline-flex;
+    height: 240px;
+    max-width: 90%;
+    border: 2px solid plum;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.col-img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/********** column mini slideshow styling **********/
+.col-minislides > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden;
+}
+
+.col-minislides > div > img {
+    animation: zoom 5s;
+    overflow: hidden;
+}
+
+@keyframes zoom {
+    from {scale: 1.0;}
+    50% {scale: 1.1}
+    to {scale: 1.0;}
+}
+
+/********** card section styling **********/
 .card {
     width: 30%;
     height: 250px;
@@ -163,14 +237,6 @@ img {
     margin: 3%;
 }
 
-.col-text {
-    background-color: rgba(10,40,100,.6);
-    border-radius: 14px;
-    overflow: hidden;
-    padding: 10px;
-    max-height: 230px;
-}
-
 .image-overlay {
     width: 100%;
     color: #fff;
@@ -198,13 +264,8 @@ img {
     opacity: 1;
 }
 
-.col-image img {
-    max-height: 300px;
-    max-width: 90%;
-    border: 2px solid plum;
-    border-radius: 10px;
-}
 
+/********** contact form styling **********/
 .col-contact input {
     width: 280px;
 }
@@ -286,5 +347,3 @@ form {
     padding: 10px;
 
 }
-
-/***** END OF CONTACT FORM STYLING *****/

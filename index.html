@@ -6,9 +6,13 @@
         <meta charset="utf-8">
         <link rel="stylesheet"  type="text/css" href="./CSS/shared_css.css">
         <link rel="icon" type="image/x-icon" href="./images//icons/favicon.ico">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript">
+        </script>
+        <script src="./JS/main.js" defer></script>
     </head>
 
     <body>
+        
 
         <header>
             <!-- NAVBAR -->
@@ -21,12 +25,12 @@
                 </ul>
             </nav>
             <!-- END NAVBAR -->
-
         </header>
 
-        <main>
+        <main class="fade-out">
             <!-- spacing for navbar at top of page -->
             <div class="nav-spacer"></div>
+
             <!-- FLAVOR VIDEO -->
             <div class="vidtext">
                 <video class= "background-vid" 
@@ -45,25 +49,30 @@
             <h1>About Me</h1>
             <div class="section" id="about">
                 
-                <div class="col-l col-image">
-                    <img  src="./Images/placeholder.avif">
+                <div class="col l">
+                    <div class="col-img-container">
+                        <img class="col-img" src="./Images/placeholder.avif">
+                    </div>
                 </div>
-                <div class="col-r col-text">
-                    <p>
-                        I am a software developer beginning my career.
-                        I have completed a rigorous coding bootcamp and have
-                        experience with HTML, CSS, JavaScript, C++, and C#.
-                        I have experience developing games in both Unity and
-                        Unreal Engine.
-                    </p>
+                <div class="col r">
+                    <div class="col-text-container">
+                        <p class="col-text">
+                            I am a software developer beginning my career.
+                            I have completed a rigorous coding bootcamp and have
+                            experience with HTML, CSS, JavaScript, C++, and C#.
+                            I have experience developing games in both Unity and
+                            Unreal Engine.
+                        </p>
+                    </div>
                 </div>
             </div>
+            <hr>
             <!-- END ABOUT SECTION -->
 
             <!-- PROJECT HIGHLIGHTS SECTION -->
             <h1>Project Highlights</h1>
             <div class="section" id="projects">  
-                <div class="col-f">
+                <div class="f">
                     <!-- Website Card -->
                     <div class="card">
                         <h3>Portfolio Website</h3>
@@ -112,33 +121,44 @@
                     <!-- End rot card -->
                 </div>
             </div>
+            <hr>
             <!-- END PROJECT HIGHLIGHTS -->
 
             <!-- PORTFOLIO LINKS -->
             <h1>Portfolio Links</h1>
             <div class="section" id="portfolio">
-                <div class="col-l col-links">
+                <div class="col l col-links">
                     <a href="https://github.com/LLamablaster?tab=repositories"
                         target="_blank">
                         <h2>Github Repositories</h2>
                     </a>
                 </div>
-                <div class="col-r col-image">
-                    <img src="./Images/image.jpg">
+                <div class="col r col-minislides">
+                    <div class="col-img-container">
+                        <img class="col-img" src="./Images/javascript.jpg">
+                    </div>
+                    <div class="col-img-container">
+                        <img class="col-img" src="./Images/html.jpg">
+                    </div>
+                    <div class="col-img-container">
+                        <img class="col-img" src="./Images/css.jpg">
+                    </div>
                 </div>
             </div>
+            <hr>
             <!-- END PORTFOLIO LINKS -->
 
             <!-- CONTACT SECTION -->
             <h1>Contact</h1>
             <div class="section contact" id="contact">
-                <div class="col-l col-text">
+                <div class="col l col-text">
                     Please feel free to contact me directly on LinkedIn,
                     send me an email at sam.p.engen@gmail.com, or leave
                     a message using this contact form.
                 </div>
-                <div class="col-r col-contact">
-                    <form action method="post">
+                <div class="col r col-contact">
+                    <form name="contact" action method="post" 
+                        onsubmit="return validateForm()">
                         <label>Name:</label>
                         <input type="text" id="name" name="name" 
                             placeholder="Your name here"><br>
