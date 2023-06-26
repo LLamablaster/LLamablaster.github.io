@@ -12,6 +12,11 @@ hr {
     opacity: .3;
 }
 
+.page-container {
+    max-width: 800px;
+    margin: auto;
+}
+
 main {
     opacity: 1;
     transition: 1s opacity;
@@ -151,6 +156,7 @@ img {
     bottom: 100px;
     height: 558px;
     width: 50%;
+    min-width: 400px;
     background-color: transparent;
     visibility: hidden;
     transition: opacity .5s, right .8s;
@@ -366,7 +372,7 @@ form {
 }
 
 .slideshow {
-    width: 90%;
+    width: 100%;
     background-color: rgba(10, 40, 100, .6);
     overflow: hidden;
     height: 450px;
@@ -377,7 +383,7 @@ form {
 }
 
 .slide-frame {
-    width: 500px;
+    width: 60%;
     height: 350px;
     margin-left: 10px;
     margin-top: 0px;
@@ -394,7 +400,7 @@ form {
 }
 
 .slide-text {
-    width: 200px;
+    width: 32%;
     height: 350px;
     margin-top: 0px;
     margin-left: 10px;
